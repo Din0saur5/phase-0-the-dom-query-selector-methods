@@ -6,33 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Introduction to the DOM Lab</title>
   </head>
-  
   <body>
-    <div>
+    <main id="app">
       <ul class="ranked-list">
         <li>1</li>
-        <li>
-          <div>
-            <ul>
-              <li>2</li>
-            </ul>
-          </div>
-        </li>
-        <li>3</li>
-      </ul>
-    </div>
-  
-    <div>
-      <ul class="unranked-list">
-        <li>6</li>
         <li>2</li>
-        <li>
-          <div>4</div>
-        </li>
       </ul>
-    </div>
+  
+      <ul class="ranked-list">
+        <li>10</li>
+        <li>11</li>
+      </ul>
+    </main>
   </body>
+  
 </html>
+<!--
+   in DOM console document.getElementById("app").querySelectorAll("ul.ranked-list li");
+      responds:
+      NodeList(4) [li, li, li, li]
+0:li 
+1:li
+2:li
+3:li
+length:4
+all info is found in drop downs if I wanted the text within the html tag 
+i have to specify [index of array].innerHTML
 
-<!-- const li2 = document.querySelector("ul.ranked-list li ul li");
-li2; responds with <li>2</li> >
+
+-->
